@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aprenda a programar de forma objetiva</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      function slide1(){
+        document.getElementById('id').src='images/html-logo.png'
+        setTimeout('slide2()', 1500)
+      }
+      function slide2(){
+        document.getElementById('id').src='images/css-logo.png'
+        setTimeout('slide3()', 1500)
+      }
+      function slide3(){
+        document.getElementById('id').src='images/js-logo.png'
+        setTimeout('slide1()', 1500)
+      }
+    </script>
+  </head>
+  <body onload="slide1()">
+    <header>
+      <h1>Aprenda a programar de forma objetiva</h1>
+    </header>
+    <main>
+      <div id="container">
+        <figure>
+          <img
+            src="images/programmer-student.jpg"
+            alt="Jovem estudando programação"
+          />
+        </figure>
+        <p>
+          Primeiro para sanar algumas dúvidas, você não precisa ser fluente em
+          inglês ou um gênio da matemática para aprender a programar, se você
+          gosta da área e tem vontade de se tornar um Programdor, você só
+          precisa ter muita disciplina, estudar muito e o principal PRATICAR
+          MUITO!
+        </p>
+        <p>
+          Neste curso você irá aprender desde o zero ao básico da programção,
+          iremos levar o ensino focado no Desenvolvimento de Websites.
+        </p>
+        <p>Um pouco dos nossos módulos:</p>
+        <ul>
+          <li>Introdução a HTML/CSS</li>
+          <li>Introdução a JavaScript</li>
+          <li>Aprofundando os conhecimentos em Desenvolvimento Web</li>
+          <li>Tornando sites responsivos</li>
+          <li>JavaScript Avançado</li>
+        </ul>
+      </div>
+
+      <div id="form">
+        <h2>Increva-se agora para ter acesso a todos os conteúdos</h2>
+        <form action="" id="formulario">
+          <label for="name">
+            Nome
+            <input type="text" name="txt_name" id="name" placeholder="Digite seu nome"/>
+          </label><br>
+          <label for="email">
+            Email
+            <input type="email" name="txt_email" id="email" placeholder="Informe seu email"/>
+          </label><br>
+          <input type="button" value="Cadastrar" id="btn"/>
+        </form>
+        <img id="id">
+      </div>
+    </main>
+  </body>
+</html>
